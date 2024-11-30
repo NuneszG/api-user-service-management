@@ -1,0 +1,33 @@
+User service management 
+
+    features
+        - create new users
+        - update some user 
+        - get specific user 
+        - delete some user 
+        - get all users 
+
+
+    technologies used
+        - postman to manage api features
+        - typescript 
+        - prisma orm
+        - mongoDB
+
+
+    requests HTTP
+        - method POST 
+        - method GET 
+        - method PUT 
+        - method DELETE
+
+
+    create user and profession model with prisma
+
+        user model      profession model
+            - name           - profission name
+            - email          - company name
+            - age            - position
+            - phone          - wage
+            - live           - area
+            - sex

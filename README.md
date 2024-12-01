@@ -6,7 +6,7 @@ Simple API made to be used in project User service Management.
 - Endpoints to create and manage users data
 - Get specific user and update or delete some user 
 
-### Technolies used
+### Technologies used
 - Typescript: Programming language developed by microsoft.
 - Prisma: Prisma is a modern ORM (Object-Relational Mapping) for Node.
 - Fastify: A web framework for Node.js that allows you to build web applications and APIs.

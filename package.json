@@ -2,8 +2,12 @@
   "name": "user-service-management---backend",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec npx ts-node src/server.ts",
     "dev": "tsx watch src/server.ts"
   },
   "keywords": [],

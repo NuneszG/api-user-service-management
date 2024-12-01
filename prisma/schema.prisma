@@ -14,13 +14,6 @@ datasource db {
   relationMode = "prisma"
 }
 
-
-enum Sex {
-  Masculino
-  Feminino
-}
-
-
 model User {
   id          String        @id @default(auto()) @map("_id") @db.ObjectId
   name        String        @unique
@@ -28,23 +21,14 @@ model User {
   age         Int
   phone       String
   live        String
-  sex         Sex           @default(Masculino)
-  profission  Profission[]  @relation("userProfission")
+  profission  String
+  wage        String
+  area        String
+  position    String
+  company     String
+
   created_at  DateTime      @default(now())
   updated_at  DateTime      @default(now())
 
   @@map("users")
-}
-
-model Profission {
-  id        String  @id @default(auto()) @map("_id") @db.ObjectId
-  name      String
-  company   String
-  position  String
-  wage      String
-  area      String
-  user      User    @relation(fields: [user_id], references: [id], name: "userProfission")
-  user_id   String  @db.ObjectId
-
-  @@map("profission")
 }

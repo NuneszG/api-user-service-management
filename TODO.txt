@@ -24,10 +24,15 @@ User service management
 
     create user and profession model with prisma
 
-        user model      profession model
-            - name           - profission name
-            - email          - company name
-            - age            - position
-            - phone          - wage
-            - live           - area
+        user model
+            - name           
+            - email          
+            - age            
+            - phone          
+            - live           
             - sex
+            - profission name
+            - area
+            - wage
+            - position
+            - company name
